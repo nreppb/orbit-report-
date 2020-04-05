@@ -10,7 +10,7 @@
     </tr>
     <tr *ngFor="let satelliteRowData of satellites">
         <td>{{satelliteRowData.name}}</td>
-        <td [class.warning] = "shouldShowWarning(boolean)">{{satelliteRowData.type}}</td>
+        <td [class.warning] = "satelliteRowData.shouldShowWarning()">{{satelliteRowData.type}}</td>
         <td>{{satelliteRowData.operational}}</td>
         <td>{{satelliteRowData.orbitType}}</td>
         <td>{{satelliteRowData.launchDate}}</td>
