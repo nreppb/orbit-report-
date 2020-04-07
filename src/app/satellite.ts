@@ -19,7 +19,7 @@ export class Satellite {
     }
 
     shouldShowWarning() : boolean {
-        if (this.type === 'Space Debris') {
+        if (this.type.toLowerCase() === 'space debris') {
          return true;
         } 
         else {
